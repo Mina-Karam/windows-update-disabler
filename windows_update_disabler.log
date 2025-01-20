@@ -1,0 +1,27 @@
+2025-01-20 23:49:01,651 - INFO - Attempting to disable updates...
+2025-01-20 23:49:04,840 - INFO - Script executed successfully: D:\My Projects\windows-update-disabler\disable_updates.bat
+2025-01-20 23:49:04,840 - INFO - Output: 
+D:\My Projects\windows-update-disabler>if not "" == "admin" (
+powershell start -verb runas '"D:\My Projects\windows-update-disabler\disable_updates.bat"' admin  
+ exit /b 
+) 
+
+2025-01-20 23:49:04,840 - INFO - Updates disabled successfully.
+2025-01-20 23:49:37,119 - INFO - Attempting to enable updates...
+2025-01-20 23:49:40,084 - INFO - Script executed successfully: D:\My Projects\windows-update-disabler\enable_updates.bat
+2025-01-20 23:49:40,085 - INFO - Output: 
+D:\My Projects\windows-update-disabler>if not "" == "admin" (
+powershell start -verb runas '"D:\My Projects\windows-update-disabler\enable_updates.bat"' admin  
+ exit /b 
+) 
+
+2025-01-20 23:49:40,086 - INFO - Updates enabled successfully.
+2025-01-20 23:49:57,994 - INFO - Attempting to use the update service...
+2025-01-20 23:50:00,917 - INFO - Script executed successfully: D:\My Projects\windows-update-disabler\use_update_service.bat
+2025-01-20 23:50:00,917 - INFO - Output: 
+D:\My Projects\windows-update-disabler>if not "" == "admin" (
+powershell start -verb runas '"D:\My Projects\windows-update-disabler\use_update_service.bat"' admin  
+ exit /b 
+) 
+
+2025-01-20 23:50:00,917 - INFO - Update service used successfully.
